@@ -4,15 +4,20 @@
     <name>highlight-stream</name>
     <vendor>bty834</vendor>
 
-    <depends>com.intellij.modules.platform</depends>
-
-    <resource-bundle>messages.MyBundle</resource-bundle>
-
-    <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.bty834.highlightstream.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-    </extensions>
+    <depends>com.intellij.java</depends>
+    <depends>com.intellij.modules.lang</depends>
 
     <applicationListeners>
-        <listener class="com.github.bty834.highlightstream.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
+        <listener class="com.github.bty834.highlightstream.HighlightStreamFinalize"
+                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </applicationListeners>
+
+
+    <extensions defaultExtensionNs="com.intellij">
+        <editorFactoryListener implementation="com.github.bty834.highlightstream.HighlightStreamEditFactoryListener"/>
+
+        <additionalTextAttributes scheme="Default" file="colorSchemes/HighlightStream.xml" />
+        <additionalTextAttributes scheme="Darcula" file="colorSchemes/HighlightStream.xml" />
+
+    </extensions>
 </idea-plugin>

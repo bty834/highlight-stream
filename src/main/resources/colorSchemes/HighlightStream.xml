@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+    <option name="STREAM_LINE_ODD">
+        <value>
+            <option name="FOREGROUND" value="FDFFDF"/>
+            <option name="BACKGROUND" value="F64093"/>
+        </value>
+    </option>
+    <option name="STREAM_LINE_EVEN">
+        <value>
+            <option name="FOREGROUND" value="FA9196"/>
+            <option name="BACKGROUND" value="3A3AFC"/>
+        </value>
+    </option>
+
+</list>
