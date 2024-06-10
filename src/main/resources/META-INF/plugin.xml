@@ -4,6 +4,11 @@
     <name>highlight-stream</name>
     <vendor>bty834</vendor>
 
+    <description><![CDATA[
+        By highlighting java8 `stream` method, highlight-stream helps you distinguish the `stream` operations
+    ]]>
+    </description>
+
     <depends>com.intellij.java</depends>
     <depends>com.intellij.modules.lang</depends>
 

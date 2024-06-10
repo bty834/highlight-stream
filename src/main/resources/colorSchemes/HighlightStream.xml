@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list>
-    <option name="STREAM_LINE_ODD">
+    <option name="STREAM_LINE">
         <value>
-            <option name="FOREGROUND" value="FDFFDF"/>
-            <option name="BACKGROUND" value="F64093"/>
-        </value>
-    </option>
-    <option name="STREAM_LINE_EVEN">
-        <value>
-            <option name="FOREGROUND" value="FA9196"/>
-            <option name="BACKGROUND" value="3A3AFC"/>
+            <option name="EFFECT_COLOR" value="11f00c" />
+            <option name="EFFECT_TYPE" value="1" />
         </value>
     </option>
 
